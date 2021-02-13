@@ -37,7 +37,7 @@ After we run a summary statistics for the suspension coils, we are also testing 
 
 When we run the T test on the overall suspension data, it shows a Mean of 1498.78 and a P value of 0.06, which means that statistically the population mean and the overall dataset mean are not different. 
 
-<img src='./resources/T_all.png'></img>
+<img src='./resources/T_All.png'></img>
 
 When we run the T test on Lot 1's suspension data, it shows a Mean of 1500 and a P value of 1, which means that statistically the population mean and the overall dataset mean are not different.
 

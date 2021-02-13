@@ -11,8 +11,6 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 
 sus_df <- read.csv('./resources/Suspension_Coil.csv', stringsAsFactors = F)
 
-head(sus_df)
-
 total_summary <- sus_df %>% summarise(Mean = mean(PSI), Median = median(PSI), Variance = var(PSI),SD = sd(PSI), .groups ='keep')
 
 total_summary

@@ -23,12 +23,8 @@ lot_summary
 
 t.test(sus_df$PSI,mu=mean(1500))
 
-lot_1 <- sus_df %>% subset(Manufacturing_Lot == 'Lot1')
-lot_2 <- sus_df %>% subset(Manufacturing_Lot == 'Lot2')
-lot_3 <- sus_df %>% subset(Manufacturing_Lot == 'Lot3')
+t.test(subset(sus_df$PSI, sus_df$Manufacturing_Lot=='Lot1'), mu=mean(1500)) #testing for Lot 1
 
-t.test(lot_1$PSI, mu=mean(1500)) #testing for Lot 1
+t.test(subset(sus_df$PSI, sus_df$Manufacturing_Lot=='Lot2'), mu=mean(1500)) #testing for Lot 2
 
-t.test(lot_2$PSI, mu=mean(1500)) #testing for Lot 2
-
-t.test(lot_3$PSI, mu=mean(1500)) #testing for Lot 3
+t.test(subset(sus_df$PSI, sus_df$Manufacturing_Lot=='Lot3'), mu=mean(1500)) #testing for Lot 3
